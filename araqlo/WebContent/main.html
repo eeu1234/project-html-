@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Araqlo</title>
+
+<link rel="stylesheet" href="./CSS/main.css" />
+<link rel="shortcut icon" href="Image/favicon.ico">
+
+
+<style type="text/css">
+#header {
+	position: fixed;
+	top: -16px;
+	z-index:80;
+}
+
+#menu {
+	
+	width: 960px;
+	height: 50px;
+	padding: 0px;
+	margin-bottom:100px;
+}
+#ad{
+	padding-top:50px;
+}
+#gnav_search_slide {
+	width: 114px;
+	height: 50px;
+	background-color: #3C3C3C;
+}
+
+#main_ad {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 960px;
+	height: 211px;
+}
+
+#main_img_ad {
+	position: relative;
+	margin:0px;
+	padding:0px;
+	background-Image: url("Image/L1slide_warmpants_161209.jpg");
+	background-repeat: no-repeat;
+	width: 960px;
+	height: 411px;
+	transition-property: background-image;
+	transition-duration: 0.5s;
+}
+
+#main_img_ad:hover {
+	position: relative;
+	background-Image: url("Image/L1slide_HTutw_161209.jpg");
+	background-repeat: no-repeat;
+}
+
+
+</style>
+
+</head>
+<body style="background-color: #E8DCD2">
+	<div id="container">
+
+		<div id="header">
+			<ul id="menu">
+				<li><img src="Image/logo50x50.png" /></li>
+				<li><img src="Image/btn_nav_global_women.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_global_men.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_global_kids.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_global_baby.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_global_company_new.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_utility01_new.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_utility03_new.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_utility04_new.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_utility05_new.gif" alt="" /></li>
+				<li><img src="Image/btn_nav_utility06_new.gif" alt="" /></li>
+				<li id="gnav_search_slide"><input type="text"
+					style="width: 70px; height: 24px; margin: 10px 10px 0px 8px; padding: 0px;" />
+					<img src="Image/btn_header_search.gif"
+					style="width: 23px; height: 24px; float: right; margin-right: 8px; margin-top: -26px;" />
+				</li>
+			</ul>
+		</div>
+		
+		
+		<div id="ad">
+			<div id="first_ad" style="margin:0px;padding:0px;">
+				<img src="Image/L1popup_novelty_161216.jpg"
+					alt="온라인 단독 연말 연시 고객 감사 선물 증정 이벤트" style="margin-bottom: 15px;">
+				<img src="Image/L1popup_xmas_161216.jpg"
+					alt="온라인 단독 연말 연시 고객 감사 선물 증정 이벤트" style="margin-bottom:-10px;padding:0px;">
+			</div>
+
+			<!-- 메인 이미지 hover를 위해 div로 선언 후 background-image 로 작업 -->
+			<div id="main_img_ad"></div>
+
+			
+			<div id="gender" style="width:976px;height:116px;padding-top:23px;margin-left:-8px;text-align:center;">
+				<img src="Image/C1_news_new_160624.jpg"  style="width:24%;"/>		
+				<img src="Image/C1_pricedown_161018_re.jpg" style="width:24%"/>		
+				<img src="Image/161025_C1_TOP_EC_123.jpg" style="width:24%"/>		
+				<img src="Image/C1_delivery_160708.jpg" style="width:24%"/>		
+			</div>
+			
+			<div id="size" style="postion:relative;width:960px;margin-top:20px;">
+				<img src="Image/C1_size_161021.jpg" />		
+				<img src="Image/C1_STARWARS_161212.jpg" style="postion:relative;width:960px;margin-top:20px;"/>		
+			</div>
+			
+			
+			<div id="recommend_product" style="postion:relative;width:960px;margin-top:20px;text-align:center;">
+			
+				<img src="Image/C1_treeGroup_161209.png" style="postion:relative;width:960px;"/>		
+				<img src="Image/tit_FLEECE.png" style="postion:relative;margin-top:20px;"/>		<br>
+				
+				
+				<img src="Image/C1_Wfleece_161216.jpg" style="float:left;"/>		
+				<img src="Image/C1_Mfleece_161216.jpg" style="float:left;"/>		
+				<div style="width:228px;height:460px;float:right">	
+				<img src="Image/C1_Wfleece_blocktech_161216.jpg" />		
+				<img src="Image/C1_Mfleecepants_blocktech_161028.jpg" style="margin-top:11px;"/>		
+				</div>
+				
+				
+			</div>
+			
+			
+
+		</div>
+	</div>
+	 <script type="text/javascript" src="./img/snowstorm.js"></script>  
+</body>
+
+</html>
