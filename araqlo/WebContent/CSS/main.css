@@ -1,20 +1,134 @@
-body{
+body {
+	
+	width:100%;
+	
+	
+	height: 100%;
+	
+	padding: 0px;
+}
+#canvas {
+	z-index:0;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+}
+#container {
+	top: 0;
 	position: relative;
+	margin-left: -480px;
 	width: 960px;
 	left: 50%;
-	margin-left: -480px;
-	height: 50px;
-	text-align: left;
-	padding: 0px;
-
-}
-
-#container{
-	top:0;
-	
+	broder:5px solid green;
 }
 
 ul, li {
 	list-style: none;
 	float: left;
+}
+
+#footer {
+	position: absolute;
+	margin-top: 30px;
+	width: 960px;
+	height: 300px;
+	
+}
+
+#footer div.siteinfo{
+	background:#000;
+	position:relative;
+	height:50px;
+}
+
+#footer div.siteinfo p.sitename{
+	float:left;
+	font-size:0%;
+	line-height:100%;
+}
+
+#footer div.siteinfo ul.utility{
+	float:left;
+	font-size:0%;
+	line-height:100%;
+	margin:15px 0 0 -20px;/*15 0 0 6*/
+}
+
+#footer div.siteinfo ul.utility li{
+float:left;
+}
+
+#footer div.siteinfo #goPageTop{
+position:absolute;
+top:14px;
+right:13px;
+}
+
+#footer p.copyright{
+font-size:0%;
+position:absolute;
+line-height:100%;
+/* margin:11px 0 0 0; *//*147라인으로 주석*/
+}
+#footer dl.world dt{
+float:left;
+margin:11px 3px 0 0;
+}
+#footer dl.world dd{
+float:left;
+margin:11px 0 0 0;
+}
+#footer dl.world dd.second{
+margin:11px 0 0 93px;
+/*11px 0 0 98px*/
+}
+/*lotte_footer*/
+div#lotte_footerW { height:144px; margin-top:13px; position:relative; }
+div#lotte_footer { text-align:left; margin:0 auto; padding:0 0 10px; }
+/* div#lotte_footer ul.utility01 { margin-bottom: 20px; } *//*주석처리*/
+div#lotte_footer ul.utility01 li { float:left; }
+/*nfoot*/
+.nfoot {overflow:hidden; width:920px; height:130px;}/*height:110px;*/
+.nfoot .footlogo {float:left; margin:18px 26px 0 9px;}
+.nfoot .copy {/*로고 옆 하단글*/
+	width:429px;
+	float:left;
+	background:url('images/menu/footer_line.gif');
+	background-repeat:no-repeat;
+	background-position:left 0;
+	padding-left:20px;
+	height:110px;
+} 
+.nfoot .copy .first {margin-bottom:3px;}/*6px*/
+.nfoot .copy address {margin-bottom:4px;}
+/* .nfoot .copy .hosting {margin-bottom:8px;} */
+.nfoot .footlink {
+	float:left;
+	background-image:url('images/menufooter_line.gif');
+	background-repeat:no-repeat;
+	background-position:left 0;
+	padding-left:21px;
+	height:93px;
+}
+.nfoot .footlink .first dt {margin-bottom:11px;}
+.nfoot .footlink .first dd {margin-bottom:8px;}
+.nfoot .footlink dl dt {
+/* margin-bottom:6px; */
+font-size:0;
+line-height:0;
+}
+.nfoot .footlink dl dd {font-size:0; line-height:0;}
+.nfoot .footLayer1 {
+	width:150px;
+	top:40px;
+	left:270px;
+	position:absolute;
+	display:none;
+}
+.nfoot .footLayer2 {
+	width:380px;
+	position:absolute;
+	top:-50px;
+	left:560px;
 }
