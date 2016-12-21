@@ -15,8 +15,6 @@
 	z-index: 80;
 }
 
-
-
 #menu {
 	width: 960px;
 	height: 50px;
@@ -60,17 +58,68 @@
 	background-repeat: no-repeat;
 }
 
-.footer_icon{
+
+/* navigator 시작 */
+#navigator{
+margin-top:40px;
+position:fixed;
+width: 200px;
+height: 800px;
+float:left;	
+z-index:900;
+}
+
+
+.left{
+	margin-top:10px;
+	width: 200px;
+	height: 400px;
 
 	
+}
+#navigator #left1 {
+	background-image:url("Image/up_box.png");
+	transform: translate(-170px,0px);
+	boder:0px;
+	transition-property: transform;
+	transition-duration: .5s;
+}
 
+#navigator #left1:hover {
+	transform: translate(-10px, 0px);
+	transition-delay: 20ms;
+}
+#navigator #left2 {
+	background-image:url("Image/down_box.png");
+	transform: translate(-170px,0px);
+	transition-property: transform;
+	transition-duration: .5s;
+}
+
+#navigator #left2:hover {
+	transform: translate(-10px, 0px);
+	transition-delay: 20ms;
 }
 
 </style>
 
 </head>
 <body style="background-color: #E8DCD2">
-<canvas id="canvas"></canvas>
+
+	<!--네비게이터  -->
+	<div id="navigator">
+
+		<div class="left" id="left1" ></div>
+		<div  class="left" id="left2" ></div>
+		<div style="clear: both;"></div>
+	</div>
+	
+
+
+	<!-- Snow 캔버스 -->
+ 	<canvas id="canvas"></canvas>
+ 
+
 	<div id="container">
 
 		<div id="header">
@@ -93,6 +142,9 @@
 				</li>
 			</ul>
 		</div>
+
+
+
 
 
 		<div id="ad">
@@ -142,24 +194,31 @@
 
 				<div id="heattech" class="re_product">
 
-					<img src="Image/tit_heattech.png" style="postion: relative; margin-top: 30px;" /> 
-					<img src="Image/C1_HEATTECH_EVENT_161216.jpg"
+					<img src="Image/tit_heattech.png"
+						style="postion: relative; margin-top: 30px;" /> <img
+						src="Image/C1_HEATTECH_EVENT_161216.jpg"
 						style="postion: relative; width: 960px;" /> <img
 						src="Image/C1_Kheattech_161216.jpg"
 						style="postion: relative; width: 960px;" />
 				</div>
 
 
-				<div id="pile_lined_sweat" class="re_product" style="text-align:center;">
-					<div style="width: 960px;margin-top:10px;padding-bottom:30px;">
-					<img src="Image/tit_pilelined.png" style="postion: relative; margin-top: 30px;" /> 
-					
-					
+				<div id="pile_lined_sweat" class="re_product"
+					style="text-align: center;">
+					<div style="width: 960px; margin-top: 10px; padding-bottom: 30px;">
+						<img src="Image/tit_pilelined.png"
+							style="postion: relative; margin-top: 30px;" />
+
+
 					</div>
-						<span style="float:left;"><img src="Image/C1_Wsweat_pilelined_161122.jpg"	style="width: 297px;" /></span>
-						<img style="margin:0px;" src="Image/C1_Wpants_pilelined_161209.jpg"	style="width: 160px;" />
-						<img style="margin-left:6px;" src="Image/C1_Msweat_pilelined_161122.jpg"	style="width: 297px; " />
-						<span style="float:right"><img src="Image/C1_Mpants_pilelined_161209.jpg"	style="width: 160px; " /></span>
+					<span style="float: left;"><img
+						src="Image/C1_Wsweat_pilelined_161122.jpg" style="width: 297px;" /></span>
+					<img style="margin: 0px;"
+						src="Image/C1_Wpants_pilelined_161209.jpg" style="width: 160px;" />
+					<img style="margin-left: 6px;"
+						src="Image/C1_Msweat_pilelined_161122.jpg" style="width: 297px; " />
+					<span style="float: right"><img
+						src="Image/C1_Mpants_pilelined_161209.jpg" style="width: 160px;" /></span>
 
 				</div>
 
@@ -169,67 +228,173 @@
 
 
 		</div>
-	
 
 
 
 
-	
-	
 
-	
-	<div id="footer"><!-- footer 시작 -->
-			<div class="siteinfo"><!-- 하단메뉴 시작 -->
-				<p class="sitename"><a href="#"><img src="Image/logo_uq_01.gif" alt="UNIQLO" width="50" height="50" /></a></p>
+
+
+
+
+		<div id="footer">
+			<!-- footer 시작 -->
+			<div class="siteinfo">
+				<!-- 하단메뉴 시작 -->
+				<p class="sitename">
+					<a href="#"><img src="Image/logo50x50.png" alt="UNIQLO"
+						width="50" height="50" /></a>
+				</p>
 				<ul class="utility clearfix">
-					<li><a href="#" target="_blank"><img src="Image/btn_footer_shop_new.gif" alt="매장안내" class="imgover" /></a></li>
-					<li><a href="#" target="_blank"><img src="Image/btn_footer_customer_new.gif" alt="고객창구" class="imgover" /></a></li>
-					<li><a href="#" target="_blank"><img src="Image/btn_footer_company_new.gif" alt="회사정보" class="imgover" /></a></li>
-					<li><a href="#" target="_blank"><img src="Image/btn_footer_recruit_new.gif" alt="채용정보" class="imgover" /></a></li>
-					<li><a href="#" target="_blank"><img src="Image/offline_cc_footer_purchase.gif" alt="대량 구매" class="imgover" /></a></li>
-					<li><a href="#" target="_blank"><img src="Image/btn_footer_guide_new.gif" alt="이용 가이드" class="imgover" /></a></li>
-					<li><a href="#" target="_blank"><img src="Image/btn_footer_accessibility_new.gif" alt="권장 환경 (이용 환경)" class="imgover" /></a></li>
-					<li><a href="#" target="_blank"><img src="Image/btn_footer_privacypolicy_new.gif" alt="개인정보처리방침" class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/btn_footer_shop_new.gif" alt="매장안내" class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/btn_footer_customer_new.gif" alt="고객창구"
+							class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/btn_footer_company_new.gif" alt="회사정보" class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/btn_footer_recruit_new.gif" alt="채용정보" class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/offline_cc_footer_purchase.gif" alt="대량 구매"
+							class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/btn_footer_guide_new.gif" alt="이용 가이드" class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/btn_footer_accessibility_new.gif" alt="권장 환경 (이용 환경)"
+							class="imgover" /></a></li>
+					<li><a href="#" target="_blank"><img
+							src="Image/btn_footer_privacypolicy_new.gif" alt="개인정보처리방침"
+							class="imgover" /></a></li>
 				</ul>
-				<p id="goPageTop" style="position:absolute; top:-2px; right:10px; width:21px; height:21px;">
-					<a href="#">
-						<img src="Image/btn_footer_pagetop.gif" alt="최상단으로가기" width="21" height="21" />
+				<p id="goPageTop"
+					style="position: absolute; top: -2px; right: 10px; width: 21px; height: 21px;">
+					<a href="#"> <img src="Image/btn_footer_pagetop.gif"
+						alt="최상단으로가기" width="21" height="21" />
 					</a>
 				</p>
-			</div><!-- 하단메뉴탭 종료 -->
-			<dl class="world clearfix" style="margin-top:0;"><!-- 하단 링크별 나열 -->
-				<dt><img src="Image/txt_footer_world.gif" alt="WORLD UNIQLO：" width="95" height="13" /></dt>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_australia_jp.gif" alt="AUSTRALIA" width="81" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_canada.gif" alt="CANADA" width="59" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_china.gif" alt="CHINA" width="52" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_eu2.gif" alt="EU" width="27" height="13" class="imgover"></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_france.gif" alt="FRANCE" width="63" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_germany_jp.gif" alt="GERMANY" width="73" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_hongkong_jp.gif" alt="HONGKONG&amp;MACAU" width="145" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_indonesia.gif" alt="INDONESIA" width="80" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_japan.gif" alt="JAPAN" width="55" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_korea.gif" alt="KOREA" width="55" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_malaysia.gif" alt="MALAYSIA" width="75" height="13" class="imgover" /></a></dd>
-				<dd class="second"><a href="#" target="_blank"><img src="Image/btn_footer_philippines.gif" alt="PHILIPPINES" width="86" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_russia2.gif" alt="RUSSIA" width="52" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_singapore.gif" alt="SINGAPORE" width="82" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_taiwan.gif" alt="TAIWAN" width="61" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_thailand.gif" alt="THAILAND" width="76" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_uk.gif" alt="UK" width="33" height="13" class="imgover" /></a></dd>
-				<dd><a href="#" target="_blank"><img src="Image/btn_footer_usa.gif" alt="USA" width="41" height="13" class="imgover" /></a></dd>
-			</dl><!-- 하단탭 밑에 나라별 링크 -->
+			</div>
+			<!-- 하단메뉴탭 종료 -->
+			<dl class="world clearfix" style="margin-top: 0;">
+				<!-- 하단 링크별 나열 -->
+				<dt>
+					<img src="Image/txt_footer_world.gif" alt="WORLD UNIQLO："
+						width="95" height="13" />
+				</dt>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_australia_jp.gif" alt="AUSTRALIA" width="81"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_canada.gif" alt="CANADA" width="59"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_china.gif" alt="CHINA" width="52"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img src="Image/btn_footer_eu2.gif"
+						alt="EU" width="27" height="13" class="imgover"></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_france.gif" alt="FRANCE" width="63"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_germany_jp.gif" alt="GERMANY" width="73"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_hongkong_jp.gif" alt="HONGKONG&amp;MACAU"
+						width="145" height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_indonesia.gif" alt="INDONESIA" width="80"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_japan.gif" alt="JAPAN" width="55"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_korea.gif" alt="KOREA" width="55"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_malaysia.gif" alt="MALAYSIA" width="75"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd class="second">
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_philippines.gif" alt="PHILIPPINES"
+						width="86" height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_russia2.gif" alt="RUSSIA" width="52"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_singapore.gif" alt="SINGAPORE" width="82"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_taiwan.gif" alt="TAIWAN" width="61"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img
+						src="Image/btn_footer_thailand.gif" alt="THAILAND" width="76"
+						height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img src="Image/btn_footer_uk.gif"
+						alt="UK" width="33" height="13" class="imgover" /></a>
+				</dd>
+				<dd>
+					<a href="#" target="_blank"><img src="Image/btn_footer_usa.gif"
+						alt="USA" width="41" height="13" class="imgover" /></a>
+				</dd>
+			</dl>
+			<!-- 하단탭 밑에 나라별 링크 -->
 			<!-- 3번째 라인 시작 -->
-			<p class="copyright"><img src="Image/txt_footer_copyright.gif" style="position:absolute; left:0; top:50px;" alt="COPYRIGHT (C) UNIQLO CO., LTD. ALL RIGHTS RESERVED." width="271" height="9" /></p>
+			<p class="copyright">
+				<img src="Image/txt_footer_copyright.gif"
+					style="position: absolute; left: 0; top: 50px;"
+					alt="COPYRIGHT (C) UNIQLO CO., LTD. ALL RIGHTS RESERVED."
+					width="271" height="9" />
+			</p>
 			<!-- 공사완료 497라인 - p태그style추가, img태그 포지션값 -->
-			<div id="lotte_footerW"><!-- footer lotte --> 
+			<div id="lotte_footerW">
+				<!-- footer lotte -->
 				<div id="lotte_footer">
 					<ul class="utility01 clearfix">
-						<li><a href="#"> <img src="Image/nav-lotte-01.gif" alt="LECS안내 및 문의-새창" /></a></li>
-						<li><a href="#" target="_blank"><img src="Image/nav-lotte-02.gif" alt="롯데닷컴소개-" /></a></li>
-						<li><a href="#" target="_blank"><img src="Image/nav-lotte-04.gif" alt="개인정보처리방침"></a></li>
-						<li><a href="#" target="_blank"><img src="Image/nav-lotte-05.gif" alt="이용약관" /></a></li>
-						<li><a href="#" target="_blank"><img src="Image/nav-lotte-08.gif" alt="청소년보호방침" /></a></li>
-						<li><a href="#" target="_blank"><img src="Image/nav-lotte-06_01.gif" alt="회원가입" /></a><a href="#"><img src="Image/nav-lotte-06_02.gif" alt="회원탈퇴-새창" /></a></li>
+						<li><a href="#"> <img src="Image/nav-lotte-01.gif"
+								alt="LECS안내 및 문의-새창" /></a></li>
+						<li><a href="#" target="_blank"><img
+								src="Image/nav-lotte-02.gif" alt="롯데닷컴소개-" /></a></li>
+						<li><a href="#" target="_blank"><img
+								src="Image/nav-lotte-04.gif" alt="개인정보처리방침"></a></li>
+						<li><a href="#" target="_blank"><img
+								src="Image/nav-lotte-05.gif" alt="이용약관" /></a></li>
+						<li><a href="#" target="_blank"><img
+								src="Image/nav-lotte-08.gif" alt="청소년보호방침" /></a></li>
+						<li><a href="#" target="_blank"><img
+								src="Image/nav-lotte-06_01.gif" alt="회원가입" /></a><a href="#"><img
+								src="Image/nav-lotte-06_02.gif" alt="회원탈퇴-새창" /></a></li>
 					</ul>
 					<div id="Lbox" class="clearfix">
 						<div class="nfoot">
@@ -237,56 +402,79 @@
 							<div class="copy">
 								<p class="first">
 									<img src="Image/footer01.gif" alt="유니클로 온라인스토어는 롯데닷컴 LECS" />
-									<a href="#"><img src="Image/footer02.gif" alt="" /></a>
-									<img src="Image/footer03.gif" alt="를 이용하고 있습니다." />
+									<a href="#"><img src="Image/footer02.gif" alt="" /></a> <img
+										src="Image/footer03.gif" alt="를 이용하고 있습니다." />
 								</p>
 								<address>
-									<img src="Image/footer04.gif" alt="(주)롯데닷컴 대표이사 김형준 서울시 중구 을지로 158(을지로4가 삼풍빌딩) 10층, 사업자등록번호:101-81-52964, 통신판매업 신고:중구 제 00402호, 개인정보보호책임자:임성묵 / 청소년보호책임자:김찬기"><!-- 20161125 이미지와 alt 수정 -->
+									<img src="Image/footer04.gif"
+										alt="(주)롯데닷컴 대표이사 김형준 서울시 중구 을지로 158(을지로4가 삼풍빌딩) 10층, 사업자등록번호:101-81-52964, 통신판매업 신고:중구 제 00402호, 개인정보보호책임자:임성묵 / 청소년보호책임자:김찬기">
+									<!-- 20161125 이미지와 alt 수정 -->
 								</address>
-								<p style="margin-top:-10px;"><!-- 속성추가 -->
-									<a href="#" class="customerBtn"><img src="Image/footer05.gif" alt="고객만족센터 1577-0296 운영시간 안내 연중무휴 09:00~20:00 (설,추석연휴 제외)" /></a>
-									<span class="footLayer1">
-										<img src="Image/footerTime.gif" alt="고객만족센터 운영시간 안내:연중무휴 오전9시~ 오후8시(설, 추석연휴 제외)" />
-									</span>
-									<img src="Image/footer06.gif" alt="FAX 02)3668-8900" />
-									<a href="#"><img src="Image/footer07.gif" alt="uniqlo@lotte.com 고객만족센터로 메일보내기" /></a>
-									<a href="#" target="_blank"><img src="Image/footer08.gif" alt="공정거래위원회 사업자정보확인-새창" /></a>
+								<p style="margin-top: -10px;">
+									<!-- 속성추가 -->
+									<a href="#" class="customerBtn"><img
+										src="Image/footer05.gif"
+										alt="고객만족센터 1577-0296 운영시간 안내 연중무휴 09:00~20:00 (설,추석연휴 제외)" /></a>
+									<span class="footLayer1"> <img
+										src="Image/footerTime.gif"
+										alt="고객만족센터 운영시간 안내:연중무휴 오전9시~ 오후8시(설, 추석연휴 제외)" />
+									</span> <img src="Image/footer06.gif" alt="FAX 02)3668-8900" /> <a
+										href="#"><img src="Image/footer07.gif"
+										alt="uniqlo@lotte.com 고객만족센터로 메일보내기" /></a> <a href="#"
+										target="_blank"><img src="Image/footer08.gif"
+										alt="공정거래위원회 사업자정보확인-새창" /></a>
 								</p>
-								<p class="hosting" style="margin-top:-22px;">
+								<p class="hosting" style="margin-top: -22px;">
 									<img src="Image/footer14.gif" alt="호스팅 서비스 사업자:㈜롯데닷컴" />
 								</p>
-								<p style="margin-top:-24px;"><!-- margin추가 -->
-									<img src="Image/footer09.gif" alt="Copyright 1996-2014, LOTTE.com.Inc.ALL right reserved." />
+								<p style="margin-top: -24px;">
+									<!-- margin추가 -->
+									<img src="Image/footer09.gif"
+										alt="Copyright 1996-2014, LOTTE.com.Inc.ALL right reserved." />
 								</p>
 							</div>
 							<div class="footlink">
 								<dl class="first">
-									<dt><img src="Image/footer10.gif" alt="온라인디지털콘텐츠산업발전법에 의한 콘텐츠보호안내" /></dt>
-									<dd><a href="#" class="fLayBtn"><img src="Image/footer11.gif" alt="온라인디지털콘텐츠산업발전법에 의한 표시 자세히보기" /></a></dd>
-									<dd class="footLayer2" style="display:none">
+									<dt>
+										<img src="Image/footer10.gif" alt="온라인디지털콘텐츠산업발전법에 의한 콘텐츠보호안내" />
+									</dt>
+									<dd>
+										<a href="#" class="fLayBtn"><img src="Image/footer11.gif"
+											alt="온라인디지털콘텐츠산업발전법에 의한 표시 자세히보기" /></a>
+									</dd>
+									<dd class="footLayer2" style="display: none">
 										<img src="Image/footerOnline2.gif" alt="온라인디지털콘텐츠산업발전법에 의한 표시" />
 									</dd>
 								</dl>
 								<dl>
-									<dt><img src="Image/footer12.gif" alt="신한은행 구매안전서비스(채무지급보증) 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 신한은행의 구매안전서비스(채무지급보증)을 이용하실 수 있습니다." /></dt>
-									<dd><a href="#"><img src="Image/footer13.gif" alt="서비스가입사실확인-새창" /></a></dd>
+									<dt>
+										<img src="Image/footer12.gif"
+											alt="신한은행 구매안전서비스(채무지급보증) 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 신한은행의 구매안전서비스(채무지급보증)을 이용하실 수 있습니다." />
+									</dt>
+									<dd>
+										<a href="#"><img src="Image/footer13.gif"
+											alt="서비스가입사실확인-새창" /></a>
+									</dd>
 								</dl>
 							</div>
 						</div>
-						<div id ="time" style="width:150px; top:-100px; left:270px; position:relative; display:none;">
+						<div id="time"
+							style="width: 150px; top: -100px; left: 270px; position: relative; display: none;">
 							<img src="Image/footerTime.gif" alt="" />
 						</div>
-						<div id ="online" style ="width:380px; position:relative; top:-180px; left:560px; display:none;">
+						<div id="online"
+							style="width: 380px; position: relative; top: -180px; left: 560px; display: none;">
 							<img src="Image/footerOnline2.gif" alt="" />
 						</div>
 					</div>
 				</div>
 			</div>
-		</div><!-- footer -->
-	
+		</div>
+		<!-- footer -->
 
 
-</div>
+
+	</div>
 
 
 
