@@ -4,24 +4,252 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-#align {
-	width: 100%;
+h4{
+	margin:0px;
+	padding:0px;
+	display: inline-block;
+}
+#container {
+	position:fixed;
+	top:0;
+	margin-left:-480px;
+	width: 960px;
+	left:50%;
 	text-align: center;
+	
+	border:1px solid red;
 }
 
-#content {
-	margin: 0 auto;
-	/*위에서 센터로 놨음에도 또 이걸 해 주는 건 IE외의 다른 브라우저에선 이게 없으면 다시 왼쪽으로 붙기 때문이에요*/
-	widows: 960px;/*이건 임의값입니다. 쓰실 데로 수정하세요*/
+#header{
+	float:left;
+	width:955px;
+	position: relative;
+	left: 0px;
+	top: 0px;	
+}
+#skipnavi{
+	float:left;
+
+	width:960px;
+	height:200px;
+	top:-30px;	
+}
+#logo{
+	position:relative;
+	
+	width:70px;
 	text-align: left;
+}
+#header #menu1{
+	position:absolute;
+	width:358px;
+	height:13px;
+	top:0;
+	right:0;
+}
+.menu{
+	position:relative;
+	top:0;
+	left:0;
+	width:958px;
+	background-color:#666666;
+	height:28px;
+	list-style:none;	
+	text-align: left;
+	padding:0px;
+	margin:0px;
+}
+.menu_sub{
+	position: relative;
+	
+	float:left;
+	
+	margin:0px;
+	padding:0px;
+}
+
+
+#order{
+	position: relative;
+	top:0;
+	left:0;
+	width:100%;
+	text-align:right;
+	border-top:3px solid black;
+	float:left;
+	margin-top:30px;
+	
+	padding:0px;
+}
+.txt{
+	position:relative;
+	float:left;
+	text-align: left;
+	font-size: 12pt;
+	height:27px;
+	vertical-align: center;
+	padding-left:10px;
+}
+
+#cart_info2{
+	position:relative;
+	top:0;
+	left:0;
+	width:960px;
+	text-align: left;
+	margin-top:50px;
+	
+}
+
+
+#cart-list {
+	position:relative;
+	width:100%;
+    margin-top:30px;
+  	margin:0px;
+  	padding:0px;
+  
+  	text-align: left;
+  	
+}   
+#tr_first{
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	
+	margin-top:10px;
+	
+	
+} 
+
+#th_first{
+	margin-left:30px;
+}
+.th_cart_list{
+	position:relative;
+	border-top:1px solid #9B9B9B;
+	border-left:1px solid #D7D7D7;
+	border-bottom:1px solid #D7D7D7;
+	text-align:center; 
+	float:left;
+	margin:0px;
+	padding:0px;
+
+}
+#tr_main{
+position:relative;
+width:100%;
+margin-top:30px;
+display: inline-block;
+text-align: center;
+height:180px;
+
+}
+#total{
+	position:relative;
+	width:100%;
+	background-color:#F7F7F7;
+	margin-top:30px;
+	display: inline-block;
+	text-align: right;
+	height:180px;
+	border-top:1px solid #9B9B9B;
+	border-bottom:1px solid #9B9B9B;
+	
 }
 </style>
 </head>
 <body>
 
-
-	<div id="align">
-		<div id="content">내용</div>
-	</div>
+	<div id="container">
+		<div id="skipnavi">
+		
+		</div>
+		<div id="header" style="border:3px solid yellow;">
+			<div id="logo">
+				
+				<img src="Image/araqlo.png" style="width:70px;height:70px;"/>
+			</div><!-- logo -->
+				
+				<div id="menu1">
+					<span><img src="Image/mylotte_top_login.gif" /></span>
+					<span><img src="Image/mylotte_top_mylotte_off.gif" alt="" /></span>
+					<span><img src="Image/mylotte_top_basket.gif" alt="" /></span>
+					<span><img src="Image/mylotte_top_wish.gif" alt="" /></span>
+					<span><img src="Image/mylotte_top_order.gif" alt="" /></span>
+					<span><img src="Image/mylotte_top_help.gif" alt="" /></span>
+					<span><img src="Image/mylotte_top_lotte.gif" alt="" /></span>
+				</div>
+				
+				
+				 
+	
+			
+			<div style="position:absolute;top:53px;right:10px;">
+				<img src="Image/mylotte_top_txt.gif">
+			</div>
+			
+			
+			<ul id="menu2" class="menu">
+					<li id="menu_sub1"class="menu_sub" style="width:170px;"><img src="Image/le_mylotteMain_btn.gif" /></li>
+					<li class="menu_sub" style="width:248px;"><img src="Image/le_btn_customerCenter_off.gif" alt="" /></li>
+					<li class="menu_sub" style="width:249px;"><img src="Image/le_btn_appInfo_off.gif" alt="" /></li>
+					<li class="menu_sub" style="width:250px;"><img src="Image/le_btn_emagazine_off.gif" alt="" /></li>
+					
+				</ul>
+		</div><!-- header -->
+	 
+	 	<div style="clear:both;"></div>
+	 
+	 
+	 
+	 	<div id="order">
+	 		<img src="Image/step1.gif"  />
+	 		
+	 		<div style="position: relative;top:0;left:0;width:100%;">
+	 		<div class="txt" style="width:135px;background-color: #737373">고객님의 혜택정보</div>	
+	 		<div class="txt" style="width:805px;background-color: #D8D8D8"><h4>로그인 후</h4>, 포인트 & 쿠폰을 확인하실 수 있습니다.</div>	
+	 		</div>
+	 	
+	 	
+	 		<div id="cart_info2">
+	 		고객님! 현재 비로그인 상태입니다. 상품을 보관하시려면 [로그인]을 해주세요.
+	 		</div>
+	 	
+	 		<div style="clear:both"></div>
+	 		<div id="cart-list" >
+	 			<div id="tr_first">
+		 			<span style="width:141px;" class="th_cart_list"><input type="checkbox" />전체선택</span>
+		 			<span style="width:232px" class="th_cart_list">상품정보</span>
+		 			<span style="width:159px;"  class="th_cart_list">판매가/혜택</span>
+		 			<span style="width:75px;" class="th_cart_list">수량</span>
+		 			<span style="width: 108px;"  class="th_cart_list">소개</span>
+		 			<span style="width:103px;" class="th_cart_list">주문/저장</span>
+		 			<span style="width:132px;" class="th_cart_list">배송정보</span>
+	 			</div>
+	 			
+	 			<div id="tr_main">
+	 				<img src="Image/cart_nodata.gif" style="margin-top:60px;" />
+	 			</div>
+	 			
+	 			<div id="total">
+	 				<div style="position: absolute;top:60px;left:300px;">
+	 				상품금액 합계 :	(+) 0원<br>
+						배송비 합계 :	(+) 0원
+					</div>
+	 				<div style="position: absolute;top:60px;right:100px;">
+	 				총 결제예정금액 : 0원
+					</div>
+	 			</div>
+	 			
+	 		</div>
+	 	
+	 	
+	 	</div><!-- order -->
+	 	
+	 	
+	 
+	</div>	<!--container-->	
 </body>
 </html>

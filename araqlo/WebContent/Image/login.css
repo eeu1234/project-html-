@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+@import url('base.css');
+
+/* ----------------------- layout_ssl ----------------------- */
+/* Layout */
+#headerWrap .powered_by {
+	top:53px;
+}
+
+/* ----------------------- popup ----------------------- */
+div.lpop {height:100%;}
+div.lpop_header {
+	height:41px;
+	/* 이미지 404로 삭제 처리(20120903)	
+	background:url('../image/login/le_bg_popTop.gif') repeat-x 0 0;
+	*/
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #b2b2b2;
+}
+div.lpop_header h1 {
+	float:left;
+	padding:4px 0 0 23px;
+}	
+div.lpop_header div.log {
+	float:right;
+	padding:10px 21px 0 0;
+}
+div.lpop_header div.log .line {
+	padding-right:5px;
+	margin-right:2px;
+	background:url('../image/login/le_logo_line.gif') no-repeat 100% 7px;
+}
+div.lpop_cont {
+	padding:25px 21px 25px 21px;
+}
+div.login_area {
+	width:400px;
+	margin:auto;
+}
+div.login_area div.tit {
+	overflow:hidden;
+	width:390px;
+	padding:1px 0 0 7px;
+}
+div.login_area div.tit span {
+	float:left;
+}
+div.login_area div.tit p.member_check {
+	float:right;
+	overflow:hidden;
+	padding-top:8px;
+	/* *padding-top:4px; 201303 삭제*/
+}
+div.login_area div.tit p.member_check input {
+	margin-left:10px;
+}
+div.login_area div.tit p.member_check input,
+div.login_area div.tit p.member_check label img {
+	vertical-align:middle;
+}
+div.login_area div.tit p.member_check input,
+div.login_area div.tit p.member_check label {
+	width:13px;
+}
+
+.login_box {
+	overflow:hidden;
+	width:400px;
+	padding-top:5px;
+	background:url('../image/login/bg_login_top.gif') no-repeat 2px top;
+}
+.login_box .bgbtm {
+	background:url('../image/login/bg_login_bottom.gif') no-repeat 2px bottom;
+}
+.login_box fieldset {
+	width:263px;
+	padding:18px 0 18px;
+	margin:auto;
+}
+.login_box fieldset .text {
+	width:139px;
+	padding:3px 0;
+	border:1px solid #d4d4d4;
+}
+.login_box fieldset ul {
+	float:left;
+	width:192px;
+}
+.login_box fieldset ul.bmember_con {width:258px;}
+.login_box fieldset ul li {
+	overflow:hidden;
+	height:24px;
+}
+.login_box fieldset ul li label {
+	float:left;
+	width:46px;
+	margin:4px 0 0 0;
+	padding:0;
+}
+.login_box fieldset ul li label.bmember_stit {
+	width:103px;
+	text-align:right;
+	padding-right:9px;
+}
+.login_box fieldset ul li input {
+	/* _margin-left:-3px; 201303 삭제*/
+}
+.login_box fieldset a.btn {
+	float:right;
+}
+.login_box fieldset a.btn_2 {
+	float:right;
+	margin-top:13px;
+}
+.login_box fieldset.bmember_area {
+	width:329px;
+	padding:0;
+	margin:auto;
+}
+div.login_area p.member_join {
+	padding:23px 0 0 2px;
+}
+div.login_area div.btn_famil {
+	width:400px;
+	padding:5px 0 7px;
+	border-bottom:1px solid #dedede;
+	text-align:right;
+}
+div.login_area p.id_pw {
+	overflow:hidden;
+	width:401px;
+	padding:7px 0 0 2px;
+}
+div.login_area p.id_pw span {
+	display:inline-block;
+	float:left;
+	margin:8px 81px 0 0;
+}
+div.login_area p.id_pw a {
+	float:left;
+	margin-left:1px;
+}
+div.login_area ul.lpop_password {
+	width:384px;
+	margin-top:15px;
+	/* _margin-top:10px; 201303 삭제*/
+	padding:7px 0 4px 14px;
+	background:#f7f7f7;
+	border:1px solid #d9d9d9;
+}
+div.login_area ul.lpop_password li {
+	padding:2px 0;
+}
+div.login_area ul.lpop_password li a img {
+	display:inline-block;
+	margin-top:-2px;
+}
+div.login_area p.lpop_logout {
+	width:400px;
+	padding:52px 0 56px;
+	text-align:center;
+}
+/*div.lpop_cont div.lpop_error {
+	padding-top:5px;
+}*/
+div.login_area p.member_error {
+	margin-top:-13px;
+	padding:0 0 5px 2px;
+	text-align:center;
+}
+div.unmember {
+	padding:8px 0 13px;
+	text-align:center;
+}
+div.unmember p {
+	margin-bottom:8px;
+}
+
+div.lpop_footer {
+	padding:3px 0;
+	/* 이미지 404로 삭제 처리(20120903)	
+	background:url('../image/login/le_bg_popBot.gif') repeat-x 0 0;
+	*/
+	border-top:1px solid #b2b2b2;
+	border-bottom:1px solid #ccc;
+	text-align:center;
+}
+/* 바닥로그인 */
+/* 201303 수정 */
+div.lgoin_top {
+	overflow:hidden;
+	width:442px;
+	height:41px;
+	margin:35px auto 25px;
+	border-bottom:1px solid #dedede;
+}
+div.lgoin_top h2 {
+	float:left;
+}
+div.lgoin_top h1 {
+	float:left;
+	padding:4px 0 0 23px;
+}
+div.lgoin_top div.log {
+	float:right;
+	padding:10px 21px 0 0;
+}
+div.lgoin_top div.log .line {
+	padding-right:5px;
+	margin-right:2px;
+	background:url('../image/login/le_logo_line.gif') no-repeat 100% 7px;
+}

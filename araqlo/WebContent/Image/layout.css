@@ -1,0 +1,434 @@
+
+/* LECS Layout */
+#headerWrapper {
+	position:relative;
+	width:940px;
+	padding:0 10px;
+	margin:0 auto;
+	z-index:999999;
+	background:none;
+}
+	#skipNav,
+	.for_access {
+		visibility:hidden;
+		position:absolute;
+		top:0;
+		left:0;
+		width:0;
+		height:0;
+		overflow:hidden;
+		font-size:0;
+		line-height:0;
+	}
+	#headerWrapper .powered_by {
+		position:absolute;
+		top:53px;
+		right:10px;
+	}
+	#headerWrapper .nav {
+	}
+		#headerWrapper .nav * {
+			float:left;
+		}
+			#headerWrapper .nav li * {
+				float:none;
+			}
+		#headerWrapper .nav * {
+			float:left;
+		}
+			#headerWrapper .nav li * {
+				float:none;
+			}
+	h1.logo { padding-top:0px; }
+	h1.logo img { margin-bottom:0px; }
+	#mainNav {
+		width:100%;
+		background-color:#666;
+		text-align:center;
+		text-transform:uppercase;
+	}
+	#mainNav:after {
+		clear:both;
+		display:block;
+		content:'';
+	}
+		#mainNav a {
+			color:#fff;
+		}
+			#mainNav li.has_sub {
+				position:relative;
+				background-color:#000;
+			}
+				#mainNav li div.layer_gnb {
+					/* display:; 201303 삭제*/
+					position:absolute;
+					top:28px;
+					left:0;
+					width:938px;
+					height:auto;
+					/*
+					padding-top:8px;
+					border:1px solid #353334;
+					*/
+					color:#353334;
+					background-color:#ffffff;
+				}
+					#mainNav li div.first {
+						padding-left:40px !important;
+					}
+					#mainNav li div.fleft {
+						width:160px;
+						padding-left:60px;
+						text-align:left;
+					}
+					#mainNav li div dl.line {
+						margin-top:7px;
+						border-top:1px solid #e6e6e6;
+						padding-top:3px;
+					}
+					#mainNav li div dl dd.discount dl {
+						padding-left:0;
+						margin-top:7px;
+						border-top:1px solid #e6e6e6;
+						padding-top:3px;
+					}
+					#mainNav li div dl dd {
+						width:160px;
+					}
+					#mainNav li div dl dt {
+						height:27px;
+					}
+					#mainNav li div dl dt img {
+						vertical-align:middle;
+						margin-top:3px;
+					}
+					#mainNav li div dl dd a {
+						display:block;
+						width:160px;
+						padding:4px 0 3px 11px;
+						color:#353334;
+						font-size:12px;
+						background: #ffffff url(../image/common/icon/bl_gray.gif) no-repeat left 7px;
+					}
+					#mainNav li div dl dd a:hover {
+						padding:4px 0 3px 11px;
+						color:#7f0119;
+						text-decoration:none;
+						background:#e7e7e7 url(../image/common/icon/bl_gray.gif) no-repeat left 7px;
+					}
+
+	#userNav {
+		position:absolute;
+		top:14px;
+		right:10px;
+	}
+		#userNav li {
+			padding:0 5px;
+		}
+		#userNav li.lotte_com {
+			padding-right:0;
+			margin-top:-2px;
+		}
+		#userNav .layer {
+			display:none;
+			position:absolute;
+			top:-3px;
+			right:-11px;
+			width:520px;
+		}
+			#userNav .layer * {
+				float:none;
+			}
+			#userNav .layer .layer_title {
+				position:relative;
+				left:189px;
+			}
+			#userNav .layer_container {
+				width:520px;
+				margin-top:-1px;
+				background:url('../image/common/le_bg_mylotteMid.gif') repeat-y 0 0;
+			}
+				#userNav .layer_content {
+					width:487px;
+					padding:16px 18px 8px 17px;
+					background:url('../image/common/le_bg_mylotteTop1.gif') no-repeat 0 0;
+				}
+				#userNav .layer_content:after {
+					clear:both;
+					display:block;
+					content:'';
+				}
+					#userNav .layer .menu {
+						float:left;
+						width:164px;
+						padding-top:8px;
+						padding-bottom:12px;
+					}
+						#userNav .layer .menu li {
+							padding-left:8px;
+							margin-bottom:6px;
+							color:#334381;
+							background:url('../image/common/le_icon_arrow.gif') no-repeat 0 5px;
+							line-height:16px;
+						}
+							#userNav .layer .menu li a {
+								color:#334381;
+							}
+							#userNav .layer .menu li a:hover,
+							#userNav .layer .menu li a:focus {
+								font-weight:bold;
+								text-decoration:underline;
+							}
+							#userNav .layer .menu li.selected a {
+								color:#334381;
+								font-weight:bold;
+							}
+					#userNav .layer .menu_cont {
+						float:right;
+						width:300px;
+						padding:12px 0px 14px 15px;
+						border:1px solid #dedede;
+						color:#666;
+						line-height:14px;
+					}
+						#userNav .layer .menu_cont em a {
+							/*font-weight:bold;*/
+							color:#ff0000;
+							text-decoration:underline;
+						}
+						#userNav .layer .menu_cont a {
+							color:#656565;
+						}
+						#userNav .layer .menu_cont p {
+							margin-top:7px;
+						}
+						#userNav .layer .menu_cont .link {
+							margin-top:0;
+						}
+							#userNav .layer .menu_cont .link a {
+								color:#334381;
+								padding-right:7px;
+								background:url('../image/common/le_icon_arrowRed.gif') no-repeat 100% 2px;
+								font-weight:bold;
+							}
+							#userNav .layer .menu_cont .link a:hover,
+							#userNav .layer .menu_cont .link a:focus {
+								text-decoration:underline;
+							}
+					#userNav .layer .menu_cont .mypage_cont {
+						display:none;
+					}
+					#userNav .layer .mypage_cont ul {
+						margin:9px 0 0;
+					}
+						#userNav .layer .mypage_cont ul li {
+							overflow:hidden;
+							width:291px;
+							padding:1px 0 0 7px;
+							color:#666;
+							background:url('../image/common/icon_txtDot.gif') no-repeat 0 7px;
+							line-height:17px;
+						}
+							#userNav .layer .mypage_cont ul li a,
+							#userNav .layer .mypage_cont ul li a:visited {
+								color:#666;
+							}
+							#userNav .layer .mypage_cont ul li em {
+								float:left;
+								width:65px;
+								font-weight:normal;
+								color:#334381;
+							}
+							#userNav .layer .mypage_cont ul li em.po {
+								letter-spacing:-1px;
+							}
+							#userNav .layer .mypage_cont ul li p {
+								float:left;
+								width:225px;
+								padding:0;
+								margin:0;
+							}
+							#userNav .layer .mypage_cont ul li a.golink {
+								margin:0 0 0 6px;
+							}
+							#userNav .layer .mypage_cont ul li a.golink img {
+								vertical-align:middle;
+								margin:-1px 0;
+								/* _position:relative; 201303 삭제*/
+							}
+							#userNav .layer .mypage_cont ul li a.golink2 {
+								margin:0 0 0 -2px;
+							}
+							#userNav .layer .mypage_cont ul li a.golink2 img {
+								vertical-align:middle;
+								margin:-1px 0;
+								/* _position:relative; 201303 삭제*/
+							}
+							#userNav .layer .mypage_cont ul li strong.spot {
+								color:#ff0000;
+							}
+						#userNav .layer .mypage_cont ul.area {
+							overflow-y:auto;
+							height:165px;
+						}
+						#userNav .layer .mypage_cont ul.line li {
+							width:270px;
+							padding-bottom:6px;
+							margin-bottom:4px;
+							border-bottom:1px solid #dedede;
+						}
+							/*이벤트*/
+							#userNav .layer .mypage_cont ul.line li ul.evt {
+								margin:6px 0 0 -8px;
+								padding:6px 0 0 7px;
+								border-top:1px solid #ededed;
+							}
+								#userNav .layer .mypage_cont ul.line li ul.evt li {
+									width:250px;
+									background:url('../image/common/icon_txtDish.gif') no-repeat 0 7px;
+									padding:1px 0 0 10px;
+									margin:0px;
+									border-bottom:none;
+								}
+								#userNav .layer .mypage_cont ul.line li ul.evt li a {
+									float:left;
+									width:180px;
+								}
+								#userNav .layer .mypage_cont ul.line li ul.evt li img.ico {
+									float:right;
+								}
+						/*배송*/
+						#userNav .layer .mypage_cont ul.dev li {
+							width:270px;
+							padding-bottom:6px;
+							margin-bottom:4px;
+						}
+							#userNav .layer .mypage_cont ul.dev li ul {
+								margin:6px 0 0 -8px;
+								padding:0;
+								border-top:1px solid #dedede;
+							}
+								#userNav .layer .mypage_cont ul.dev li ul li {
+									width:270px;
+									background:none;
+									padding:7px 0 8px 10px;
+									margin:0px;
+									border-bottom:1px solid #ededed;
+									line-height:14px;
+								}
+								#userNav .layer .mypage_cont ul.dev li ul li a {
+									float:left;
+									width:180px;
+								}
+								#userNav .layer .mypage_cont ul.dev li ul li img.ico {
+									float:right;
+									margin-top:10px;
+								}
+				#userNav .layer .close {
+					padding:4px 0 8px;
+					background:url('../image/common/le_bg_mylotteBot.gif') no-repeat 0 100%;
+					text-align:center;
+				}
+#container {
+	clear:both;
+	position:relative;
+	width:940px;
+	padding:0 10px 30px;
+	margin:0 auto;
+	z-index:11;
+}
+#container:after {
+	clear:both;
+	display:block;
+	content:'';
+}
+#footerWrap {
+	position:relative;
+	clear:both;
+	width:940px;
+	padding:0 10px 33px;
+	border-top:2px solid #000;
+	margin:0 auto;
+	z-index:1;
+}
+#footerWrap:after {
+	clear:both;
+	display:block;
+	content:'';
+}
+	#footerWrap .nav {
+		position:relative;
+		width:100%;
+		padding:13px 0 11px;
+		border-bottom:1px solid #efefef;
+	}
+	#footerWrap .nav:after {
+		clear:both;
+		display:block;
+		content:'';
+	}
+		#footerWrap .nav * {
+			float:left;
+		}
+		#footerWrap .nav li {
+			margin-right:28px;
+		}
+		#footerWrap .nav .top {
+			position:absolute;
+			top:10px;
+			right:0;
+		}
+	#footerWrap .info {
+		width:779px;
+		padding:20px 0 0 143px;
+		background:url('../image/common/le_foot_info_lotte_com.gif') no-repeat 21px 41px;
+	}
+	#footerWrap .info:after {
+		clear:both;
+		display:block;
+		content:'';
+	}
+		#footerWrap .info .general,
+		#footerWrap .info .extra {
+			position:relative;
+			float:left;
+			min-height:79px;
+			/* _height:79px; 201303 삭제*/
+			padding-top:5px;
+			border-left:1px solid #efefef;
+		}
+			#footerWrap .info .layer {
+				display:none;
+				position:absolute;
+			}
+			#footCenterLayer {
+				top:20px;
+				left:140px;
+			}
+			#footOnlineLayer {
+				top:-98px;
+				right:-21px;
+			}
+		#footerWrap .info .general {
+			padding-right:18px;
+			padding-left:27px;
+		}
+			#footerWrap .info .general .powered_by {
+				margin-bottom:9px;
+			}
+			#footerWrap .info .general .addr {
+				margin-bottom:5px;
+			}
+			#footerWrap .info .general .contact {
+				margin-bottom:6px;
+			}
+		#footerWrap .info .extra {
+			padding-left:17px;
+		}
+			#footerWrap .info .extra .online {
+				margin-bottom:13px;
+			}
+			
+
+/*** 20120409 ~  : 유니클로 1.5 -> 2.0 서비스 이관에 따른 수정 ***/
+#mainNav li ul{display:none; position:absolute; top:28px; left:0px; background-color:#a6a6a6; color:#fff;}
